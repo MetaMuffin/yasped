@@ -1,0 +1,30 @@
+div,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+}
+
+.sheets-divider {
+  width: 50%;
+  height: 100%;
+}
+.editor-divider {
+  flex-grow: 1;
+  width: 50%;
+  height: 100%;
+}
+.editor {
+  width: auto;
+  height: 90vh;
+}
+.editor-status {
+  height: 10vh;
+}
