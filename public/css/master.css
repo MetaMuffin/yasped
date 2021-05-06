@@ -39,3 +39,7 @@ table {
   height: 10px;
 }
 
+.cell-error {
+  background-color: red;
+  color: black;
+}

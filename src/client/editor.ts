@@ -44,19 +44,19 @@ export function buildCodeEditor(onrebuild: Callback): HTMLElement {
 
     setTimeout(() => {
         editor.setValue(`
-        return {
-            main: {
-                col_labels: ["A * 2", "A squared"],
-                line_labels: y => ({
-                    v: y,
-                    color_bg: [(y % 3 == 0) ? 0 : 255, 255, 255]
-                }),
-                cells: [
-                    y => y * 2,
-                    y => y ** 2
-                ]
-            }
-        }`)
+return {
+    main: {
+        col_labels: ["A * 2", "A squared"],
+        line_labels: y => ({
+            v: y,
+            color_bg: [(y % 3 == 0) ? 0 : 255, 255, 255]
+        }),
+        cells: [
+            y => y * 2,
+            y => y ** 2
+        ]
+    }
+}`)
         // editor.setValue(`
         // return {
         //     main: {

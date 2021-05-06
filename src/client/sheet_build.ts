@@ -119,8 +119,8 @@ export function rebuildSheet(sheetname: string, sheetgen: CSheet): HTMLElement {
 
     const scrollHandler = () => {
         if (!etable.parentElement) return
-        while (etable.parentElement.scrollTop + etable.parentElement.offsetHeight + 50 > etable.offsetHeight) appendLine()
-        while (etable.parentElement.scrollLeft + etable.parentElement.offsetWidth + 50 > etable.offsetWidth) appendCol()
+        while (etable.parentElement.scrollTop + etable.parentElement.offsetHeight + 200 > etable.offsetHeight) appendLine()
+        while (etable.parentElement.scrollLeft + etable.parentElement.offsetWidth + 200 > etable.offsetWidth) appendCol()
     }
 
     setTimeout(() => {
